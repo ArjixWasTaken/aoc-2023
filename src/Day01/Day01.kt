@@ -30,15 +30,15 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-        return input.mapNotNull {
-            var line = it;
-            val nums = ArrayList<Int>();
+        return input.sumOf {
+            var line = it
+            val nums = ArrayList<Int>()
 
             while (line.isNotEmpty()) {
                 val word = digits.firstOrNull {
                     line.startsWith(it.key)
                 }
-                val digit = line.first().digitToIntOrNull();
+                val digit = line.first().digitToIntOrNull()
 
                 if (word != null) {
                     nums.add(word.value)
@@ -55,7 +55,7 @@ fun main() {
             }
 
             "${nums.first()}${nums.last()}".toInt()
-        }.sum()
+        }
     }
 
     // test if implementation meets criteria from the description, like:
