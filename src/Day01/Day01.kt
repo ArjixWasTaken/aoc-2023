@@ -59,12 +59,12 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    check(part1(readInput("Day01/Day01_test1")!!) == 142)
-    check(part2(readInput("Day01/Day01_test2")!!) == 281)
+    check(part1(readInput("Day01/test1")!!) == 142)
+    check(part2(readInput("Day01/test2")!!) == 281)
 
     val input = readInput("Day01/Day01")
     if (input == null) {
-        println("'src/Day01.txt' is missing, fetch yours at https://adventofcode.com/2023/day/1/input")
+        println("'src/Day01/Day01.txt' is missing, fetch yours at https://adventofcode.com/2023/day/1/input")
         return
     }
 
